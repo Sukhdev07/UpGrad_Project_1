@@ -17,8 +17,8 @@
 
         <div class="header">
 
-            <button class="topButtons" id="signUp">Sign Up</button>
-            <button class="topButtons" id="signIn">Sign In</button>
+            <button class="topButtons" id="signUp"><b>Sign Up</b></button>
+            <button class="topButtons" id="signIn"><b>Sign In</b></button>
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore, Imagine, Create</p>
 
@@ -27,8 +27,8 @@
         <div class="postButtons">
 
         	<!-- Insert code for All Posts & Create Post button here -->
-            <button class="centerButtons" onclick=" window.location.href='html/bloglist.html'">All Posts</button>
-            <button class="centerButtons" >Create Post</button>
+            <button class="centerButtons" onclick=" window.location.href='html/bloglist.html'"><b>All Posts</b></button>
+            <button class="centerButtons" id="createPost" onclick="create()"><b>Create Post</b></button>
 
         </div>
     </div>
@@ -105,7 +105,32 @@
 
     <div>
 
-    	<!-- Insert code for Create Post modal here -->
+    	<!-- Insert code for Create Post modal here -->   
+        <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+            
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="/action_page.php" >
+  <div class="container">
+    <h1 style="font-family:Abel; ">Create Post</h1>
+   
+    <hr>
+      
+       <label for="exampleInputTitle1">Enter Title</label>
+    <input type="text" class="form-control" id="exampleInputTitle1" aria-describedby="emailHelp" placeholder="Enter Title" required>
+    <label for="userComments">Description</label>
+      <textarea class="form-control" id="userComments" placeholder="Desciption ..." required></textarea>
+    <div class="postButton">
+      <button type="submit" class="createButton" style="text-align: center;">Create</button>
+       <button type="button" class="cancelbtn" style="text-align: center;">Cancel</button>
+      </div>
+  </div>
+</form>
+            </div> 
+       
+  </div>
 
     </div>
 

@@ -73,14 +73,14 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 
-.formButton {
+.createButton {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 40%;
   opacity: 0.9;
 }
 
@@ -95,4 +95,28 @@ button:hover {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 15px;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+    color:white;
+  background-color: #f44336;
+    width:40%;
+     margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
+
+#userComments{
+     width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.postButton{
+    text-align: center;
 }
