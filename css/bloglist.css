@@ -1,0 +1,230 @@
+
+.post {
+    position: relative;
+    width: 40%;
+    height: 10%;
+    background: #fff;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 10px 10px 10px 20px;
+    float:left;
+    border-radius: 15px;
+}
+    
+.post-left {
+        width: 15%;            
+        max-width: 15%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+}
+.post-content {
+        width: 75%;           
+        display: table-cell;
+        text-align: left;
+        background-color: #E8E8E8;
+        color: #000000;
+        border-radius: 0 15px 15px 0;
+        padding: 0 20px;
+}
+.post-title{
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: #2b312b;
+    font-size: 20px;
+    height: 25px;
+    }
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.post-desc{
+    height: 55px;
+    margin-bottom: 0 !important;
+    font-size: 15px;
+    line-height: 1.2;
+    display: -webkit-box;
+  max-width: 96%;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    background-color: orange;
+    background-size: 2000% 2000%;
+}
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.topButtons{
+    background-color:blue;
+    color:white;
+    float:right;
+    border:none;
+    margin:5px;
+    padding:10px;
+}
+.middleText
+{
+    font-family:Marck Script;
+    font-style:italic;
+    color:black;
+    font-size:13px;
+    margin:5px;
+}
+#pageTitle{
+    font-family:Satisfy;
+    font-style:italic;
+    color:blue;
+    font-size:40px;
+    margin:5px;
+}
+
+
+.postButtons{
+    display:flex;
+    flex-direction:row; 
+    align-items: center;
+    justify-content: center;
+    height:60vh;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 30%;
+  border:none;
+    text-align: center;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.formButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.trashButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
+.cancelbtn {
+  padding: 14px 20px;
+    color:white;
+  background-color: #f44336;
+    width:40%;
+     margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.container {
+  padding: 16px;
+    font-family:Abel;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width : 1000px )
+{
+    .post-title{
+        font-size: 17px;
+    }
+}
+/*
+@media only screen and (max-width: 880px) {
+    .post-title{
+        font-size: 15px;
+    }
+   
+}
+*/
+@media only screen and (max-width: 700px) {
+    
+    .post {
+        width:80%;
+    } 
+    .post-title{
+        font-size: 20px;}
+}
+    
+@media only screen and (max-width: 480px) {
+    
+        .post-title{
+        font-size: 16px;}
+    }
