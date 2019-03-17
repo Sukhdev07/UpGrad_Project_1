@@ -112,8 +112,12 @@ body {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  width: 30%;
+  width: 25%;
   border:none;
+    
+}
+
+#modalContent{
     text-align: center;
 }
 
